@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <title>Upload</title>
+
+</head>
+<body>
+    <form action="/home" method='POST' enctype="multipart/form-data">
+    <div class="main">
+        <label>Input image only (jpg, png, gif, bmp etc).</label><br><br>
+        <input type="file" name="image" onchange="ValidateSingleInput(this);" /><br><br>
+        <button type="submit">Submit</button>
+        </div>
+    </form>
+    <script src="home.js"></script>
+</body>
+</html>
